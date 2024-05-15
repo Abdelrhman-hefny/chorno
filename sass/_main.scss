@@ -1,0 +1,230 @@
+.hero-sec {
+  height: calc(100vh - 56px);
+
+  h1 {
+    color: #0d1c35;
+    font-size: 5em;
+  }
+
+  p {
+    max-width: 80%;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      max-width: 80%;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      max-width: 80%;
+      font-size: 12px;
+    }
+  }
+
+  .btn {
+    background-color: $orang;
+    color: #fff;
+    transition: background-color .4s ease-in-out;
+
+    &:hover {
+      background-color: #0d1c35;
+    }
+  }
+
+  .hero {
+    height: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+section.new-Products {
+  .head .btn {
+    background-color: $orang;
+    color: #fff;
+    float: right;
+  }
+
+  .card {
+    border: 0;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .card-title {
+    font-weight: bolder;
+    font-size: 1.1em;
+  }
+
+  .card-text {
+    color: $orang;
+  }
+
+  img {
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 575px) {
+    .col-xsm-12 {
+      margin: auto;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+      flex: 0 0 90%;
+      max-width: 90%;
+    }
+
+    .head {
+      margin-left: 20px;
+    }
+  }
+}
+
+section.gallery {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    transition: .4s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+section.popular {
+  .items {
+    .item {
+      img {
+        border-bottom: 2px solid $orang;
+
+        &:hover {
+          // border: ;
+        }
+      }
+    }
+
+  }
+
+  .card-body {
+    position: relative;
+  }
+
+  .hover {
+    height: 0px;
+    width: 100%;
+    right: 0;
+    top: 0px;
+    background-color: $orang;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    transform-origin: top;
+    transition: .5s;
+    opacity: 0;
+  }
+
+  .card:hover .hover {
+    height: 40px;
+    top: -40px;
+    opacity: 1;
+  }
+}
+
+.hero-sec {
+  .hero2,
+  .hero3 {
+    height: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero2 {
+    background-image: url('/img/gallery/choce_watch1.png');
+  }
+
+  .hero3 {
+    background-image: url('/img/gallery/choce_watch2.png');
+  }
+}
+
+.choice1,
+.choice2 {
+  height: auto;
+
+  p {
+    width: 100%;
+  }
+}
+
+.foot {
+  background-image: url('../img/gallery/vidoe_more.png');
+  color: #fff;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  i,
+  svg {
+    font-size: 25px
+  }
+  p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+
+a {
+  color: darken($color: #000000, $amount: 0);
+}
+
+footer {
+  i,
+  svg {
+    margin-left: 14px
+  }
+  span {
+    color: $orang;
+  }
+
+  @media (max-width: 775px) {
+    h5,
+    ul li,
+    p {
+      text-align: center;
+    }
+
+    ul.list-unstyled {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

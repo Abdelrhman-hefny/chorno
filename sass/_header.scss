@@ -1,0 +1,23 @@
+header{
+  z-index: 99;
+}
+  ::selection{
+    background-color: #ff2020c0;
+    color: #fff;
+  }
+  
+  nav{
+z-index: 99;
+    box-shadow: 1px 0px 22px -13px; 
+  ul{
+
+    li{
+      transition: background-color .4s ease-in-out;
+&:hover{
+  background-color: $color;
+}
+    }
+  }
+  
+  
+  }

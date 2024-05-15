@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  font-weight: bolder;
+}
+
+header {
+  z-index: 99;
+}
+
+::selection {
+  background-color: rgba(255, 32, 32, 0.7529411765);
+  color: #fff;
+}
+
+nav {
+  z-index: 99;
+  box-shadow: 1px 0px 22px -13px;
+}
+nav ul li {
+  transition: background-color 0.4s ease-in-out;
+}
+nav ul li:hover {
+  background-color: #ffa49b;
+}
+
+.hero-sec {
+  height: calc(100vh - 56px);
+}
+.hero-sec h1 {
+  color: #0d1c35;
+  font-size: 5em;
+}
+.hero-sec p {
+  max-width: 80%;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-sec h1 {
+    font-size: 3em;
+  }
+  .hero-sec p {
+    max-width: 80%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-sec h1 {
+    font-size: 2em;
+  }
+  .hero-sec p {
+    max-width: 80%;
+    font-size: 12px;
+  }
+}
+.hero-sec .btn {
+  background-color: #ff361c;
+  color: #fff;
+  transition: background-color 0.4s ease-in-out;
+}
+.hero-sec .btn:hover {
+  background-color: #0d1c35;
+}
+.hero-sec .hero {
+  background-image: url('../img/hero/watch.png');
+  height: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-sec img {
+  width: 100%;
+}
+
+section.new-Products .head .btn {
+  background-color: #ff361c;
+  color: #fff;
+  float: right;
+}
+section.new-Products .card {
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+section.new-Products .card-title {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+section.new-Products .card-text {
+  color: #ff361c;
+}
+section.new-Products img {
+  transition: all 0.4s ease-in-out;
+}
+section.new-Products img:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 575px) {
+  section.new-Products .col-xsm-12 {
+    margin: auto;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+  section.new-Products .head {
+    margin-left: 20px;
+  }
+}
+
+section.gallery {
+  overflow: hidden;
+}
+section.gallery img {
+  width: 100%;
+  transition: 0.4s;
+}
+section.gallery img:hover {
+  transform: scale(1.05);
+}
+
+section.popular .items .item img {
+  border-bottom: 2px solid #ff361c;
+}
+section.popular .card-body {
+  position: relative;
+}
+section.popular .hover {
+  height: 0px;
+  width: 100%;
+  right: 0;
+  top: 0px;
+  background-color: #ff361c;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  transform-origin: top;
+  transition: 0.5s;
+  opacity: 0;
+}
+section.popular .card:hover .hover {
+  height: 40px;
+  top: -40px;
+  opacity: 1;
+}
+
+.hero-sec .hero2,
+.hero-sec .hero3 {
+  height: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-sec .hero2 {
+  background-image: url("../img/gallery/choce_watch1.png");
+}
+.hero-sec .hero3 {
+  background-image: url("../img/gallery/choce_watch2.png");
+}
+
+.choice1,
+.choice2 {
+  height: auto;
+}
+.choice1 p,
+.choice2 p {
+  width: 100%;
+}
+
+.foot {
+  background-image: url('../img/gallery/vidoe_more.png');
+
+  color: #fff;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.foot i,
+.foot svg {
+  font-size: 25px;
+}
+.foot p {
+  font-size: 12px;
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+footer i,
+footer svg {
+  margin-left: 14px;
+}
+footer span {
+  color: #ff361c;
+}
+@media (max-width: 775px) {
+  footer h5,
+  footer ul li,
+  footer p {
+    text-align: center;
+  }
+  footer ul.list-unstyled {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1005px) {
+  section{
+    margin-top: 80px;
+
+  }
+section:first-child{
+  margin-top: 0;
+}
+
+}
